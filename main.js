@@ -160,7 +160,7 @@ function makeBooks(booksObject) {
         container.append(containerButton);
     } else {
         const unCompletedButton = document.createElement('button');
-        unCompletedButton.setAttribute('data-testid', 'bookItemDeleteButton')
+        unCompletedButton.setAttribute('data-testid', 'bookItemIsCompleteButton')
         unCompletedButton.innerText = 'Belum selesai dibaca'
         unCompletedButton.addEventListener('click', function () {
             undoReadFromCompleted(booksObject.id);
