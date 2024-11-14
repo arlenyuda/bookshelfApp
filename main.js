@@ -263,6 +263,7 @@ function editReadFromCompleted(bookId) {
         bookTitle.innerText = 'Judul ' + titleInput.value;
         bookAuthor.innerText = 'Penulis: ' + authorInput.value;
         bookYear.innerText = 'Tahun: ' + parseInt(yearInput.value);
+        saveData();
 
         bookTitle.style.display = 'block';
         bookAuthor.style.display = 'block';
@@ -293,7 +294,6 @@ function editReadFromCompleted(bookId) {
     });
 
     buttonContainer.append(titleInput, authorInput, yearInput, saveButton, cancelButton);
-    saveData();
 }
 
 document.addEventListener(RENDER_EVENT, function () {
